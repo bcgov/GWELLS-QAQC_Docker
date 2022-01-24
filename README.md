@@ -2,6 +2,9 @@
 
 ## Description 
 
+The purpose of this Docker image is to create an environment for processing publicly available data downloaded from the Province of British Columbia’s GWELLS application https://apps.nrs.gov.bc.ca/gwells/ through GitHub Actions. This data will then be displayed in the GWELLS QA/QC Shiny App.
+
+
 This is a python/R/geospatial docker image that builds upon rocker/geospatial:4.1.2.    The rocker/geospatial:4.1.2 image contains R, a lot of pre-installed R spatial libraries and the associated system dependencies.  The dockerfile starts from that image, installs miniconda python and creates an environment is defined by the `environment.yml` file in Simon Norris's [GWELLS_LocationQA](https://github.com/bcgov/GWELLS_LocationQA) repository.
 
 The objective of this docker image is to allow the github actions defined on [GWELLS-QAQC_Geocode_ArchiveData]((https://github.com/bcgov/GWELLS-QAQC_Geocode_ArchiveData)) to download gwells.csv, reverse-geocode the lat-long, create data quality variables and save the results to CSVs in the data/ folder of that repo.  These CSVs will then be read by the GWELLS QAQC Shiny ([github](https://github.com/bcgov/GWELLS-QAQC-RShiny-Dashboard), [deployed app on BCGOV Shinyapps.io account](https://bcgov-env.shinyapps.io/gwells-qaqc-rshiny-dashboard/)).
