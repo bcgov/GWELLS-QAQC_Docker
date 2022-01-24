@@ -1,6 +1,8 @@
 FROM rocker/geospatial:4.1.2
 
-LABEL maintainer="simoncoulombe@protonmail.com"
+LABEL developer="simoncoulombe@protonmail.com"
+LABEL maintainer="Elyse.Sandl@gov.bc.ca"
+LABEL owner="Elyse.Sandl@gov.bc.ca"
 LABEL description="Image with Rstudio, Conda and geospatial dependencies"
 
 ENV miniconda3_version="py39_4.9.2"
