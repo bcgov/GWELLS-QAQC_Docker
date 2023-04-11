@@ -1,5 +1,7 @@
 # GWELLS Docker Image (Rstudio, Python, geospatial libraries)
 
+[![Lifecycle:Stable](https://img.shields.io/badge/Lifecycle-Stable-97ca00)](<Redirect-URL>)
+
 ## Description 
 
 The purpose of this Docker image is to create an environment for processing publicly available data downloaded from the Province of British Columbia’s GWELLS application https://apps.nrs.gov.bc.ca/gwells/ through GitHub Actions. This data will then be displayed in the GWELLS QA/QC Shiny App.
